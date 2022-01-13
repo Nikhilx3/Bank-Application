@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nikbankingapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bank_"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/bank_"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BasicBankingApp">
+        <activity android:name="com.example.nikbankingapp.UI.SendToUserList"></activity>
+        <activity android:name="com.example.nikbankingapp.UI.UsersList" />
+        <activity android:name="com.example.nikbankingapp.UI.TransactionHistory" />
+        <activity android:name="com.example.nikbankingapp.UI.UserData" />
+        <activity android:name="com.example.nikbankingapp.UI.HomeScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
